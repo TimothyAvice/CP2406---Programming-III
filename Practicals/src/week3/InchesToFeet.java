@@ -2,9 +2,11 @@ package week3;
 
 public class InchesToFeet {
 
-    float inches;
+    float inches = 10;
 
-    public float convert(float value){
-        return value/12;
+    void convertAndPrint(){
+        float feet = inches/12;
+        System.out.println(inches);
+        System.out.println(feet);
     }
 }
