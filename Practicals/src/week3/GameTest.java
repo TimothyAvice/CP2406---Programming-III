@@ -24,5 +24,7 @@ class GameTest {
         game.makeGuess(-1); // check for a loss
         assertEquals(2, game.count);
         assertEquals(1, game.wins);
+
+        Game journey = new Game();
     }
 }
