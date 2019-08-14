@@ -7,7 +7,6 @@ public class Game {
     int secret = random.nextInt( 10) + 1;
     int count;
     int wins;
-
     void  makeGuess(int value){
         count += 1;
         if (value == secret){
