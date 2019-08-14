@@ -25,5 +25,4 @@ class GameTest {
         assertEquals(2, game.count);
         assertEquals(1, game.wins);
     }
-
 }
