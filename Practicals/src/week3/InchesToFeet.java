@@ -3,9 +3,10 @@ package week3;
 class InchesToFeet {
 
     void convertAndPrint(){
-        float inches = 10;
-        float feet = inches /12;
-        System.out.println(inches);
-        System.out.println(feet);
+        int inches = 10;
+        int feet = inches /12;
+        int remaindingInches = inches%12;
+        System.out.println("Inches " + inches);
+        System.out.printf("That is equal to: %d feet %d inches", feet, remaindingInches);
     }
 }
