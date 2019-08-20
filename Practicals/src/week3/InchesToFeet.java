@@ -8,5 +8,7 @@ class InchesToFeet {
         int remainingInches = inches%12;
         System.out.println("Inches " + inches);
         System.out.printf("That is equal to: %d feet %d inches", feet, remainingInches);
+
+
     }
 }
