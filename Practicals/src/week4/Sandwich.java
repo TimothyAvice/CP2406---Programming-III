@@ -1,9 +1,9 @@
 package week4;
 
 public class Sandwich {
-    private String ingredient;
-    private String bread;
-    private double price;
+    String ingredient;
+    String bread;
+    double price;
 
     public void setIngredient(String ing) {
         ingredient = ing;
