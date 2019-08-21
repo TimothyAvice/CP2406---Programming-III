@@ -1,5 +1,7 @@
 package week4;
 
+import java.util.Scanner;
+
 public class Lease {
     private String name;
     private int aptNum;
@@ -52,6 +54,6 @@ public class Lease {
     }
 
     private static void explainPetPolicy(){
-        System.out.print("No pets");
+        System.out.print("Pets add an additional cost");
     }
 }
