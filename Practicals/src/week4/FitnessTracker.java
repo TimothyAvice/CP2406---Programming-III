@@ -11,6 +11,12 @@ public class FitnessTracker {
         date = "01/01/2019";
     }
 
+    public FitnessTracker(String activity, int minutes, String date){
+        this.activity = activity;
+        this.minutes = minutes;
+        this.date = date;
+    }
+
     public String getActivity() {
         return activity;
     }

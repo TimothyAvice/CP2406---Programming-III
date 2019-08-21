@@ -44,4 +44,12 @@ class FitnessTrackerTest {
         fitnessTracker.setDate("02/02/2019");
         assertEquals(fitnessTracker.getDate(), "02/02/2019");
     }
+
+    @Test
+    void testConstructor(){
+        FitnessTracker fitnessTracker = new FitnessTracker("cling", 2000, "21/12/2021");
+        assertEquals(fitnessTracker.getDate(), "21/12/2021");
+        assertEquals(fitnessTracker.getMinutes(), 2000);
+        assertEquals(fitnessTracker.getActivity(), "cling");
+    }
 }
