@@ -3,7 +3,7 @@ package week5;// DebugFive4.java
 import javax.swing.*;
 public class FixDebugFive4
 {
-   public static void main (String args[]) 
+   public static void main (String[] args)
    {
       int one, two, three, four;
       String str, output;
