@@ -19,9 +19,9 @@ public class FixDebugFive1
          "\n3 - Grilled cheese\n4 - Fish sandwich");
       usersChoice = Integer.parseInt(usersChoiceString);
       if(usersChoice == 1 || usersChoice == 2)
-         bill = bill + LOW_PRICE;
+         bill = bill + HIGH_PRICE;
       else
-         bill = bill - MED_PRICE;
+         bill = bill + MED_PRICE;
       usersChoiceString = JOptionPane.showInputDialog(null,
           "Fries with that?\n1 - Yes\n2 - No");
       usersChoice = Integer.parseInt(usersChoiceString);
