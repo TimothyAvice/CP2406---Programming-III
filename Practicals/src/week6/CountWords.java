@@ -5,10 +5,19 @@ import java.util.StringTokenizer;
 
 public class CountWords {
     public static void main(String[] args) {
+        char[] specialChars = {'.', '!', '-', '/'};
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter a sentence");
         String sentence = scanner.nextLine();
-        StringTokenizer tokenizer = new StringTokenizer(sentence);
-        System.out.format("There are %s words in that sentence", tokenizer.countTokens());
+        StringBuilder newSentence = new StringBuilder(sentence);
+        for (int i = 0; i < sentence.length(); ++i){
+            for (int j = 0; j<specialChars.length; ++j)
+                if (sentence.charAt(i) == specialChars[j]) {
+                    newSentence.setCharAt(i, '\0');
+                }
+        }
+        sentence = newSentence.toString();
+        StringTokenizer updatedSentence = new StringTokenizer(sentence);
+        System.out.format("There are %s words in that sentence", updatedSentence.countTokens());
     }
 }
