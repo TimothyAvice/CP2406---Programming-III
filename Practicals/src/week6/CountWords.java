@@ -11,8 +11,8 @@ public class CountWords {
         String sentence = scanner.nextLine();
         StringBuilder newSentence = new StringBuilder(sentence);
         for (int i = 0; i < sentence.length(); ++i){
-            for (int j = 0; j<specialChars.length; ++j)
-                if (sentence.charAt(i) == specialChars[j]) {
+            for (char specialChar : specialChars)
+                if (sentence.charAt(i) == specialChar) {
                     newSentence.setCharAt(i, '\0');
                 }
         }
