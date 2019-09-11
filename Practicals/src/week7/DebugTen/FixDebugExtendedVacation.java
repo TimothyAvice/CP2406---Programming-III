@@ -1,4 +1,4 @@
-package week7;
+package week7.DebugTen;
 
 class FixDebugExtendedVacation extends FixDebugVacation
 {

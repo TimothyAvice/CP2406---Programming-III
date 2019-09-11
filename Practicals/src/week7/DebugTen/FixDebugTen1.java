@@ -1,4 +1,4 @@
-package week7;// A Play has a title and author
+package week7.DebugTen;// A Play has a title and author
 // A Musical is a Play that also has a composer
 
 public class FixDebugTen1

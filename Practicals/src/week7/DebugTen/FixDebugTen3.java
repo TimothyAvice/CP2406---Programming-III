@@ -1,4 +1,4 @@
-package week7;// A PhoneBook is a Book with a city
+package week7.DebugTen;// A PhoneBook is a Book with a city
 import javax.swing.*;
 public class FixDebugTen3
 {

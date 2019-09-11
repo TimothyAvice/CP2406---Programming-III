@@ -1,4 +1,4 @@
-package week7;
+package week7.DebugTen;
 
 // A customer's purchase is approved if the
 // purchase does not exceed the credit limit

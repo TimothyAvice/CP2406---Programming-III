@@ -1,4 +1,4 @@
-package week7;
+package week7.DebugTen;
 
 public class FixDebugCustomerMakingPurchase extends FixDebugCustomer
 {
@@ -19,7 +19,6 @@ public class FixDebugCustomerMakingPurchase extends FixDebugCustomer
     @Override
     public void display()
     {
-       display();
        System.out.println("Purchase amount $" + amountOfPurchase);
        if(overLimit)
           System.out.println("****Credit denied - customer over limit");
