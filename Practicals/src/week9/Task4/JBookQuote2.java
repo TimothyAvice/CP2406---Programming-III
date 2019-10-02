@@ -2,12 +2,10 @@ package week9.Task4;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class JBookQuote2 extends JFrame {
 
-    public JBookQuote2(){
+    private JBookQuote2(){
         super("Quote");
         setSize(350, 150);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -17,12 +15,7 @@ public class JBookQuote2 extends JFrame {
         JButton button = new JButton("Click to show quote");
         add(button);
         add(quote);
-        button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                quote.setText("Try to be an idiot - https://inspirobot.me/");
-            }
-        });
+        button.addActionListener(actionEvent -> quote.setText("Try to be an idiot - https://inspirobot.me/"));
     }
 
     public static void main(String[] args) {

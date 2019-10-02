@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class JBookQuote1 extends JFrame {
 
-    public JBookQuote1(){
+    private JBookQuote1(){
         super("Quote");
         setSize(350, 150);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -16,6 +16,6 @@ public class JBookQuote1 extends JFrame {
 
     public static void main(String[] args)
     {
-        JBookQuote1 frame = new JBookQuote1();
+        new JBookQuote1();
     }
 }
