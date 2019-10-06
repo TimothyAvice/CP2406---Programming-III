@@ -15,6 +15,7 @@ public class JCapitals {
         jFrame.setSize(600,600);
         jFrame.setVisible(true);
 
+        // Adding content
         JLabel city = new JLabel("");
 
         String[] countries = {"Western Australia", "South Australia", "Northern Territory", "Queensland",
@@ -25,8 +26,10 @@ public class JCapitals {
 
         container.add(countriesDrop);
         container.add(city);
+        city.setText(cities[countriesDrop.getSelectedIndex()]);
         jFrame.setContentPane(container);
 
+        // Changing city
         countriesDrop.addActionListener(actionEvent -> city.setText(cities[countriesDrop.getSelectedIndex()]));
     }
 
