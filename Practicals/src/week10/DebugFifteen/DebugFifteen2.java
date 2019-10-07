@@ -1,0 +1,33 @@
+package week10.DebugFifteen;
+// Demonstrates layout positions
+// using BorderLayout
+
+import javax.swing.*;
+import java.awt.*;
+public class DebugFifteen2 extends JFrame
+{
+   JButton wb = new JButton("Left    ");
+   JButton sb = new JButton("Down  ");
+   JButton eb = new JButton("Right ");
+   JButton cb = new JButton("Center  ");
+   JButton nb = new JButton("Up");
+   Container con;
+
+   private DebugFifteen2()
+   {
+      setDefaultCloseOperation(EXIT_ON_CLOSE);
+      con = this.getContentPane();
+      con.setLayout(new BorderLayout());
+      con.add(nb,BorderLayout.NORTH);
+      con.add(sb,BorderLayout.SOUTH);
+      con.add(eb,BorderLayout.EAST);
+      con.add(wb,BorderLayout.WEST);
+      con.add(cb,BorderLayout.CENTER);
+   }
+   public static void main(String[] args)
+   {
+      DebugFifteen2 f = new DebugFifteen2();
+      f.setSize(300, 300);
+      f.setVisible(true);
+   }
+}
