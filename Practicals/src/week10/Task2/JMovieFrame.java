@@ -6,11 +6,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class JMovieFrame implements ActionListener {
-    JButton[] buttons = new JButton[5];
-    String[] buttText = {"North", "East", "South", "West", "Centre"};
-    JLabel label = new JLabel("Hey");
+    private JButton[] buttons = new JButton[5];
+    private String[] buttText = {"North", "East", "South", "West", "Centre"};
+    private JLabel label = new JLabel("Hey");
 
-    public JMovieFrame() {
+    private JMovieFrame() {
         // Framework
         JFrame jFrame = new JFrame("Movie Frame");
         jFrame.setLayout(new GridLayout(2,1));
